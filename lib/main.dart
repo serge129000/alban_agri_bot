@@ -2,6 +2,7 @@ import 'package:agro_bot/Bluetooth.dart';
 import 'package:agro_bot/bluetooth_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blue/flutter_blue.dart';
+import 'BBluetooth.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -47,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         color: Colors.blue,
         onPressed: (){
             setState(() {
-              Navigator.push(context, MaterialPageRoute(builder:(context)=>BluetoothPage()));
+              Navigator.push(context, MaterialPageRoute(builder:(context)=>BluePage()));
             });}
             ),
         ],
